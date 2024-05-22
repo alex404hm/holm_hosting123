@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: MinecraftRegular;
+  src: url(/fonts/MinecraftRegular.otf);
+  font-display: swap;
+}
+
+@font-face {
+  font-family: MinecraftBold;
+  src: url(/fonts/MinecraftBold.otf);
+  font-display: swap;
+}
+
+@font-face {
+  font-family: MinecraftItalic;
+  src: url(/fonts/MinecraftItalic.otf);
+  font-display: swap;
+}
+
+@font-face {
+  font-family: MinecraftBoldItalic;
+  src: url(/fonts/MinecraftBoldItalic.otf);
+  font-display: swap;
+}
+
+@font-face {
+  font-family: MinecraftRus;
+  src: url(/fonts/MinecraftRus.ttf);
+  font-display: swap;
+}
+
+html {
+  background-color: rgb(17 24 39);
+}
+
+.font-mc {
+  font-family: MinecraftRegular, MinecraftRus;
+}
+
+.font-mc-bold {
+  font-family: MinecraftBold, MinecraftRus;
+  font-weight: bold;
+}
+
+.font-mc-italic {
+  font-family: MinecraftItalic, MinecraftRus;
+  font-style: italic;
+}
+
+.font-mc-bold-italic {
+  font-family: MinecraftBoldItalic, MinecraftRus;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.strikethrough {
+  text-decoration-line: line-through;
+}
+
+.underline-strikethrough {
+  text-decoration-line: underline line-through;
+}
+
+* {
+  scroll-behavior: smooth;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+*::-webkit-scrollbar {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 8px;
+  height: 8px;
+}
+*::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: #ffffff20;
+  border: 1px solid #ffffff20;
+  border-radius: 3px;
+}
+*::-webkit-scrollbar-corner {
+  background-color: transparent;
+}
